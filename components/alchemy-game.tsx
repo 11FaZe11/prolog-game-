@@ -12,6 +12,7 @@ import {
 import { BookOpen, FlaskConical, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { AppHeader } from "./app-header"
 import { GameCanvas, type Burst } from "./game-canvas"
 import { InventoryPanel } from "./inventory-panel"
 import { CodexPanel, type DiscoveryEntry } from "./codex-panel"
@@ -321,6 +322,7 @@ export function AlchemyGame() {
   return (
     <DndContext sensors={sensors} onDragEnd={handleDragEnd}>
       <div className="flex h-dvh min-h-0 flex-col bg-background text-foreground">
+        <AppHeader onMenuClick={() => setSidebarOpen(true)} />
         <TopBar
           discoveredCount={inventory.length}
           onOpenSidebar={() => setSidebarOpen(true)}

@@ -13,17 +13,13 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Alchemy Lab — combine elements, discover everything",
+  title: "ALOGIC — The Cognitive Alchemy",
   description:
-    "A drag-and-drop alchemy game inspired by Little Alchemy 2. Start with water, fire, earth, and air — combine to discover life, storms, cities, and more.",
+    "Combine elements using Prolog logic. A drag-and-drop alchemy game powered by expert systems and knowledge base reasoning.",
   generator: "v0.app",
   icons: {
-    icon: [
-      { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
-      { url: "/icon-dark-32x32.png", media: "(prefers-color-scheme: dark)" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 }
 
